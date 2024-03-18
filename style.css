@@ -19,6 +19,7 @@ body{
     border: 0.3rem solid #000;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 4rem;
 }
 .square{
     width: 1rem;
@@ -28,9 +29,26 @@ body{
     box-sizing: border-box;
     transition: background-color 200ms;
 }
-.square:hover{
-    background-color: black;
+.colors{
+    height: 16rem;
+    width: 4rem;
+    background-color: rgb(80, 80, 80);
+    border: 0.3rem solid black;
+    border-left: 0;
 }
-.square.clicked {
-    background-color: black;
+.colors div{
+    width: 4rem;
+    height: 4rem;
+}
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow; 
 }
