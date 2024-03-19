@@ -7,18 +7,12 @@ let eraserSelected = false;
 let brush = document.getElementById(`brush`);
 let brushCursor = 'url(images/bcursor.png), auto';
 let brushSelected = false;
-function hoverColorChanger(){
-    let root = document.documentElement;
-    root.style.setProperty(`--hoverColor`, `${currentColor}`);
-}
 colorPicker.addEventListener('input', function() {
     currentColor = colorPicker.value;
-    hoverColorChanger();
 });
 function selectEraser() {
     eraserSelected = true;
     currentColor = `white`;
-    hoverColorChanger();
     colorPicker.disabled = true;
 }
 function deselectEraser(){
@@ -29,7 +23,6 @@ function selectBrush(){
     deselectEraser();
     brushSelected = true;
     currentColor = `black`;
-    hoverColorChanger();
     colorPicker.value = `#000000`;
     colorPicker.disabled = false;
 }
