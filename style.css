@@ -1,3 +1,6 @@
+:root{
+    --hoverColor: black;
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +14,7 @@ body{
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    
 }
 .container{
     width: 16rem;
@@ -19,7 +23,6 @@ body{
     border: 0.3rem solid #000;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 4rem;
 }
 .square{
     width: 1rem;
@@ -28,6 +31,9 @@ body{
     border: 1px solid black;
     box-sizing: border-box;
     transition: background-color 200ms;
+}
+.square:hover{
+    background-color: var(--hoverColor);
 }
 .colors{
     height: 16rem;
@@ -51,4 +57,50 @@ body{
 }
 #yellow{
     background-color: yellow; 
+}
+#colorPicker{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 4rem;
+    height: 16rem;
+    cursor: pointer;
+}
+.tools{
+    height: 16rem;
+    width: 4rem;
+    background-color: rgb(80, 80, 80);
+    border: 0.3rem solid black;
+    border-right: 0;
+}
+.eraser{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    cursor: pointer;
+}
+.tools img{
+    width: 4rem;
+    height: 4rem;
+}
+.brush{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    cursor: pointer;
+}
+.unknown-feature{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.unknown-feature h1{
+    font-size: 2rem;
 }

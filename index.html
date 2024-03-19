@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Etch-a-Sketch</title>
+    <title>Flack's Painting Site</title>
 </head>
 <body>
-    <div class="container" id="grid-container"></div>
-    <div class="colors" id="color-palette">
-        <div id="red"></div>
-        <div id="blue"></div>
-        <div id="green"></div>
-        <div id="yellow"></div>
+    <div class="tools">
+        <div class="brush" id="brush">
+            <img src="images/brush.png" alt="" srcset="">
+        </div>
+        <div class="eraser" id="eraser">
+            <img src="images/eraser.png" alt="" srcset="">
+        </div>
+        <div class="unknown-feature">
+            <h1>?</h1>
+        </div>
+        <div class="unknown-feature">
+            <h1>?</h1>
+        </div>
+        
+    </div>
+    <div class="container" id="grid-container">
+        
+    </div>
+    <div class="colors">
+        <div class="color-picker">
+            <input type="color" id="colorPicker" value="#000000">
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
